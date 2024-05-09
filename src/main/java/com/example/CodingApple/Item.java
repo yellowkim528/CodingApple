@@ -1,14 +1,14 @@
 package com.example.CodingApple;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Entity
 @ToString
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Item {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
